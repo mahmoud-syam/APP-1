@@ -1,0 +1,35 @@
+.navbar{
+    background-color: #2C3E50 !important;
+    z-index: 999999999;
+
+}
+.navbar a{
+    color: #fff !important;
+}
+.navbar li a {
+    font-size: 18px !important;
+    padding-left: 10px;
+}
+.linkHover{
+    background-color: #1ABC9C !important;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.logo{
+    width: 60px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.6);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+}

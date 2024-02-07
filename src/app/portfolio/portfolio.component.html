@@ -1,0 +1,32 @@
+<div class="portfolio p-4">
+    <div class="container align-items-center">
+        <h1 class="text-center">PORTFOLIO COMPONENT<i class="fa-solid fa-star"></i></h1>
+    </div>
+
+</div>
+<div class="images container">
+    <div class="row pt-5 pb-5 g-3">
+        <div class="col-md-4" (click)="getSrc(item.imgUrl)" *ngFor="let item of items ; index as index">
+            <div class="parent bg-danger rounded rounded-3">
+                <div class="child bg-info w-100 rounded rounded-3">
+                    <img [src]="item.imgUrl" alt="">
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="overlay modal-dialog-centered text-white fa-solid fa-plus fa-6x"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- <div *ngFor="let item of items " >
+    <img *ngIf=" userClick " [src]=" item.imgUrl" alt="" class="d-none">
+</div> -->
+<!-- Modal -->
+<div class="modal fade pt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-body">
+            <img *ngIf=" userClick " [src]=" userImg" alt="" class="w-100">
+        </div>
+    </div>
+</div>
